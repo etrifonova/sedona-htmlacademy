@@ -120,18 +120,57 @@
                             </label> ЗАЧЕМ ТУТ ПУСТОЙ <span class="control-mark"></span>? -->
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                        <label class="catalog-filter-label">
+                            <input class="catalog-filter-input" type="number" name="min-price">от
+                        </label>
+                        <label class="catalog-filter-label">
+                            <input class="catalog-filter-input" type="number" name="max-price">до
+                        </label>
                         <button class="range-toggle toggle-min" type="button">
                             <span class="visually-hidden">Изменить минимальную цену.</span>
                         </button>
                         <button class="range-toggle toggle-max" type="button">
                             <span class="visually-hidden">Изменить максимальную цену.</span>
                         </button>
-                    </fieldset>
-
-
-
+                        <button class="apply-button" type="submit">Применить</button>
+                        <button class="reset-button" type="submit">Сбросить</button>
                     </fieldset>
                 </form>
+            </section>
+            <section class="search-result">
+                <h2 class="search-result-title">Найдено гостиниц: 38</h2>
+                <form class="sorting-type">
+                    <label class="visually-hidden" for="sorting">Сортировка</label>
+                    <select class="select-control" name="sorting" id="sorting">
+                        <option value="cheap">Сначала дешёвые</option>
+                        <option value="expensive">Сначала дорогие</option>
+                        <option value="popular">Сначала популярные</option>
+                    </select>
+                </form>
+                <a href="#" class="button button-selected">
+                    <span class="visually-hidden">Показать карточки</span>
+                </a>
+                <a href="#" class="button">
+                    <span class="visually-hidden">Показать таблицу</span>
+                </a>
+                <a href="#" class="button">
+                    <span class="visually-hidden">Показать список</span>
+                </a>
+
+                <ul class="product-list">
+                    <li class="product-item">
+                        <a class="product-card-link" href="product.html">
+                            <img class="product-card-image" src="" alt="">
+                            <h3 class="product-card-title">Amara Resort & Spa</h3>
+                        </a>
+                        <b class="product-card-type">Гостиница</b>
+                        <b class="product-card-price">От 4000 ₽</b>
+                        <a class="product-card-button button" href="#">подробнее</a>
+                        <button class="product-card-button favorite">В избранное</button>
+                        <!-- <b class="product-card-rating">От 4000 ₽</b> РАЗОБРАТЬ СО ЗВЕЗДОЧКАМИ И РЕЙТИНГОМ-->
+                    </li>
+                </ul>
+
             </section>
         </main>
 
