@@ -16,3 +16,11 @@
 .welcome-block-image {
     margin-top: 30px;
 }
+
+
+/* КАТАЛОГ */
+.filter {
+    background-image: url("/img/catalog-background\ 1.jpg");
+    background-size: 1200px 408px;
+    background-repeat: no-repeat;
+}
