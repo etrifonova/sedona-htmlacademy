@@ -8,13 +8,16 @@
     </head>
     <body>
         <header class="page-header">
-            <a class="logo-link">
-                <img class="logo-link-image" src="/img/logo-link.svg" alt="sedona-logo" width="139" height="70">
-            </a>
             <nav class="navigation">
+                <!-- логотип с ссылкой засунули в nav, я думала, что должно быть отдельно -->
+                <a class="logo-link">
+                    <img class="logo-link-image" src="/img/logo-link.svg" alt="Логотип Седоны" width="139" height="70">
+                </a>
+                <!-- Нет href в теге а почему-то -->
                 <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Главная</a>
+                    <li class="nav-item nav-item-active">
+                        <a class="nav-link" href="index.html">Главная</a> 
+                        <!-- У Академии нет ссылки на index.html тут; видимо, потому что это и так главна страница, но пока не до конца понятен этот момент -->
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">О Седоне</a>
@@ -23,9 +26,9 @@
                         <a class="nav-link" href="catalog.html">Гостиницы</a>
                     </li>
                 </ul>
-            </nav>
 
-            <nav class="navigation">
+                <!-- Пользовательское меню Академия обернула в div - почему? семантичнее ли список ul? stackoverflow: по сути, можно и так, и сяк, но некоторые пишут, что ul семантичнее -->
+
                 <ul class="nav-list nav-user">
                     <li class="nav-item">
                         <a class="nav-link" href="#">
@@ -34,11 +37,13 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <span class="visually-hidden">Избранное</span>
+                            <span class="visually-hidden" href="#">Избранное</span>
+                            <span class="nav-counter-button" href="#">Избранное</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Хочу сюда!</a>
+                        <a class="nav-button" href="#">Хочу сюда!</a>
+                        <!-- я поставила тег button, но у Академии a с классом button -->
                     </li>
                 </ul>
             </nav>
@@ -239,12 +244,14 @@
             </section>
             
             <section class="newsletter no-background">
-                <h2 class="newsletter-title">Подпишитесь на рассылку?</h2>
+                <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
                 <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-                <form>
-                    <label class="visually-hidden" for="email">Ваш e-mail</label>
-                    <input class="newsletter-email-input" type="email" id="email" name="email" placeholder="Ваш e-mail">
-                    <button class="hotel-search-button" type="submit">Подписаться</button>
+                <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <p class="newsletter-email">
+                        <label class="visually-hidden" for="email">Ваш e-mail</label>
+                        <input class="newsletter-email-input" type="email" id="email" name="email" placeholder="Ваш e-mail">
+                    </p>
+                    <button class="newsletter-button" type="submit">Подписаться</button>
                 </form>
             </section>
         </main>
