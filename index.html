@@ -3,27 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width. initial-scale=1.0">
-        <title>Туристический город Седона</title>
+        <title>Гостиницы Седоны</title>
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>
         <header class="page-header">
             <nav class="navigation">
                 <!-- логотип с ссылкой засунули в nav, я думала, что должно быть отдельно -->
-                <a class="logo-link">
+                <a class="logo-link" href="index.html">
                     <img class="logo-link-image" src="/img/logo-link.svg" alt="Логотип Седоны" width="139" height="70">
                 </a>
                 <!-- Нет href в теге а почему-то -->
-                <ul class="nav-list">
-                    <li class="nav-item nav-item-active">
-                        <a class="nav-link" href="index.html">Главная</a> 
+                <ul class="site-menu-list">
+                    <li class="site-menu-item site-menu-item-active">
+                        <a class="site-menu-link" href="index.html">Главная</a> 
                         <!-- У Академии нет ссылки на index.html тут; видимо, потому что это и так главна страница, но пока не до конца понятен этот момент -->
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">О Седоне</a>
+                    <li class="site-menu-item">
+                        <a class="site-menu-link" href="#">О Седоне</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="catalog.html">Гостиницы</a>
+                    <li class="site-menu-item">
+                        <a class="site-menu-link" href="catalog.html">Гостиницы</a>
                     </li>
                 </ul>
 
@@ -38,7 +38,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <span class="visually-hidden">Избранное</span>
-                            <span class="nav-counter-button">Избранное</span>
+                            <span class="nav-counter-button">12</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -48,6 +48,7 @@
                 </ul>
             </nav>
         </header>
+        
         <main class="main-index">
             <h1 class="visually-hidden">Туристический город Седона</h1>
 
@@ -118,20 +119,26 @@
             </section>
             
             <section class="hotel-search">
-                <h2 class="hotel-search-title">Заинтересовались?</h2>
+                <h2 class="visually-hidden">Поиск гостиниц</h2>
+
+                <p class="hotel-search-title">Заинтересовались?</p>
                 <p class="hotel-search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <a class="hotel-search-link" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+
+                <a class="hotel-search-button button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
             </section>
             
             <section class="newsletter with-background">
                 <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
                 <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+
                 <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
                     <p class="newsletter-email">
-                        <label class="visually-hidden" for="email">Ваш e-mail</label>
-                        <input class="newsletter-email-input" type="email" id="email" name="email" placeholder="Ваш e-mail">
+                        <label class="newsletter-email-label">
+                            <span class="visually-hidden">Ваш e-mail</span>
+                            input class="newsletter-email-input" type="email" id="email" name="email" placeholder="Ваш e-mail">
+                        </label>
                     </p>
-                    <button class="newsletter-button" type="submit">Подписаться</button>
+                    <button class="newsletter-button button" type="submit">Подписаться</button>
                 </form>
             </section>
         </main>
@@ -139,25 +146,24 @@
         <footer class="page-footer">
             <ul class="social-list">
                 <li class="social-item">
-                    <a class="social-link" href="#">
+                    <a class="social-link" href="https://twitter.com/htmlacademy_ru">
                         <span class="visually-hidden">Твиттер</span> 
                     </a>
                 </li>
                 <li class="social-item">
-                    <a class="social-link" href="#">
+                    <a class="social-link" href="https://www.facebook.com/htmlacademy">
                         <span class="visually-hidden">Фейсбук</span> 
                     </a>
                 </li>
                 <li class="social-item">
-                    <a class="social-link" href="#">
+                    <a class="social-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
                         <span class="visually-hidden">YouTube</span> 
                     </a>
                 </li>
             </ul>
-            <address class="footer-address">
-                <a class="footer-phone" href="88128121212">+7 (812) 812-12-12</a>
-            </address>
-            <a class="footer-logo-link">
+            <a class="footer-phone" href="tel.:+78128121212">+7 (812) 812-12-12</a>
+            
+            <a class="footer-logo-link" href="https://htmlacademy.ru/">
                 <img class="footer-logo-image" src="/img/brand=htmlacademy.svg" alt="Логотип Академии">
             </a>
 
