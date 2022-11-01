@@ -159,8 +159,9 @@
             </form>
         </section>
         
-        <section class="search-result">
-            <h2 class="search-result-title">Найдено гостиниц: 38</h2>
+        <section class="catalog-search">
+            <h2 class="visually-hidden">Результаты поиска</h2>
+            <p class="search-result-title">Найдено гостиниц: 38</p>
             
             
             <form class="sorting-type">
@@ -170,7 +171,32 @@
                         <option value="expensive">Сначала дорогие</option>
                         <option value="popular">Сначала популярные</option>
                     </select>
-                </form>
+            </form>
+            <!-- я сделала сортировку как в Барбершопе у Академии.
+            Академия для Седоны использует другие теги:
+        
+            <h3 class="visually-hidden">Сортировка и отображение</h3>
+        <details class="select">
+          <summary class="select-button">Сначала дешёвые</summary>
+
+          <ul class="select-menu">
+            <li class="select-item select-item-active">
+              <a class="select-option" href="#">Сначала дешёвые</a>
+            </li>
+            <li class="select-item">
+              <a class="select-option" href="#">Сначала дорогие</a>
+            </li>
+            <li class="select-item">
+              <a class="select-option" href="#">Сначала популярные</a>
+            </li>
+            <li class="select-item">
+              <a class="select-option" href="#">Сначала комфортные</a>
+            </li>
+          </ul>
+        </details>
+    
+    -->
+            
                 <a href="#" class="button button-selected">
                     <span class="visually-hidden">Показать карточки</span>
                 </a>
@@ -181,8 +207,12 @@
                     <span class="visually-hidden">Показать список</span>
                 </a>
 
+    <!-- я сделала вид карточек (таблица и т.п.) как в Барбершопе у Академии.
+            Академия для Седоны использует ul (наверное, так семантичнее, но пока оставлю как есть): -->
+
                 <ul class="product-list">
                     <li class="product-item">
+                        
                         <a class="product-card-link" href="product.html">
                             <img class="product-card-image" src="" alt="">
                             <h3 class="product-card-title">Amara Resort & Spa</h3>
