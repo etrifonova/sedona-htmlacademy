@@ -1,0 +1,151 @@
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/PTSans-Regular.woff2);
+    font-display: swap;    
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/PTSans-Bold.woff2);
+    font-display: swap;    
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    background: #FFFFFF;
+}
+
+.welcome {
+    background-image: url("/img/index-background.jpg");
+    background-size: 1200px 485px;
+    background-repeat: no-repeat;
+}
+
+.welcome-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    /* margin-left: auto; не выравнивается по центру почему-то
+    margin-right: auto; */
+}
+
+.welcome-block-image {
+    margin-top: 30px;
+}
+
+/*
+.page {
+}
+.page-header {
+}
+.navigation {
+}
+.logo-link {
+}
+.logo-link-image {
+}
+.site-menu-list {
+}
+.site-menu-item {
+}
+.site-menu-item-active {
+}
+.site-menu-link {
+}
+.nav-list {
+}
+.nav-user {
+}
+.nav-item {
+}
+.nav-link {
+}
+.visually-hidden {
+}
+.nav-counter-button {
+}
+.nav-button {
+}
+.main-index {
+}
+.advantages {
+}
+.about-title {
+}
+.about-text {
+}
+.advantages-list {
+}
+.advantages-item {
+}
+.advantages-title {
+}
+.advantages-text {
+}
+.advantages-image {
+}
+.advantages-sublist {
+}
+.advantages-subitem {
+}
+.advantages-item-black {
+}
+.hotel-search {
+}
+.hotel-search-title {
+}
+.hotel-search-text {
+}
+.hotel-search-button {
+}
+.button {
+}
+.newsletter {
+}
+.with-background {
+}
+.newsletter-title {
+}
+.newsletter-text {
+}
+.newsletter-form {
+}
+.newsletter-email {
+}
+.newsletter-email-label {
+}
+.newsletter-button {
+}
+.page-footer {
+}
+.social-list {
+}
+.social-item {
+}
+.social-link {
+}
+.footer-phone {
+}
+.footer-logo-link {
+}
+.footer-logo-image {
+}
+
+
+*/
+
+/* КАТАЛОГ */
+.filter {
+    background-image: url("/img/catalog-background\ 1.jpg");
+    background-size: 1200px 408px;
+    background-repeat: no-repeat;
+}
