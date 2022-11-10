@@ -168,11 +168,15 @@ body {
 }
 
 .advantages-list {
+    list-style: none;
+    width: 1200px;
     display: grid;
+    margin-left: -40px;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 384px);
     grid-template-areas: "advantage-1 advantage-1 advantage-1"
                         "advantage-1 advantage-1 advantage-1"
-                        "advantage-2-image advantage-2-image advantage-2"
+                        "advantage-2 advantage-2 advantage-2"
                         "advantage-3 advantage-4 advantage-5"
 }
 
@@ -180,34 +184,96 @@ body {
     grid-area: advantage-1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "advantages-title-and-text advantage-1-image advantage-1-image"
-                        "advantages-subitem-1 advantages-subitem-2 advantages-subitem-3"
-
+    grid-template-areas: "advantages-title-and-text-1 advantage-1-image advantage-1-image"
+                        "advantages-sublist advantages-sublist advantages-sublist";
 }
 
 .advantages-title-and-text {
-    grid-area: advantages-title-and-text;
+    background-color: #83B3D3;
+    grid-area: advantages-title-and-text-1;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 97px;
 }
 
 .advantages-image {
     grid-area: advantage-1-image;
 }
 
-.advantages-subitem:first-child {
-    grid-area: advantages-subitem-1;
+.advantages-sublist {
+    list-style: none;
+    height: 384px;
+    margin: 0;
+    grid-area: advantages-sublist;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.advantages-subitem:nth-child(2) {
-    grid-area: advantages-subitem-2;
+.advantages-subitem {
+    text-align: center;
+    padding-top: 97px;
+    padding-bottom: 97px;
+}
+
+.advantages-subitem:first-child {
+    width: 400px;
+    margin-left: -40px;
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-subitem:last-child {
-    grid-area: advantages-subitem-3;
+    width: 400px;
+    background-color: rgba(131, 179, 211, 0.12);
+} 
+
+.advantages-item:nth-child(2) {
+    grid-area: advantage-2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "advantage-2-image advantage-2-image advantages-title-and-text-2";
 }
 
-/* .advantages-subitem:first-child {
-    grid-area: accommodation;
-} */
+.advantages-item:nth-child(2) > .advantages-title-and-text {
+    background-color: #83B3D3;
+    grid-area: advantages-title-and-text-2;
+}
+
+.advantages-item:nth-child(2) > .advantages-image {
+    grid-area: advantage-2-image;
+}
+
+.advantages-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+}
+
+.advantages-item:nth-child(3) {
+    grid-area: advantage-3;
+    text-align: center;
+    padding: 98px 75px 98px 75px;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(4) {
+    grid-area: advantage-4;
+    text-align: center;
+    padding: 98px 75px 98px 75px;
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item:nth-child(5) {
+    grid-area: advantage-5;
+    text-align: center;
+    padding: 98px 75px 98px 75px;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+/* "advantage-3 advantage-4 advantage-5" */
+
 
 
 /*
