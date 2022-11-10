@@ -17,35 +17,151 @@
 
 body {
     font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
-    background: #FFFFFF;
+    background-color: #E5E5E5;
+    height: 3315px;
+    width: 1280px;
 }
 
-.welcome {
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+.page-header {
+    color: #000000;
+    background-color: #FFFFFF;
+    height: 70px;
+    width: 1060px;
+    padding: 0 70px 0 70px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.site-menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: PT Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    /* letter-spacing: 0em;
+    text-align: left; эти свойства есть в Фигме, но непонятно, нужно ли их использовать*/
+    list-style: none;
+    height: 66px;
+    width: 345px;
+    left: 169px;
+}
+
+.site-menu-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: inherit;
+}
+
+.nav-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 66px;
+    width: 264px;
+    border-radius: 0px;
+    list-style: none;
+}
+
+.nav-item {
+    text-align: center;
+    vertical-align: center;
+    height: 66px;
+    width: 42px;
+}
+
+.nav-item:last-child {
+    width: 166px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: inherit;
+}
+
+.nav-button {
+    text-decoration: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+/* identical to box height, or 125% */
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #756257;
+    color: #FFFFFF;
+    height: 37px;
+    width: 160px;
+    left: 0px;
+    top: 0px;
+    border-radius: 4px;
+}
+
+.nav-counter-button {
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: white;
+    background-color: #7DB54F;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;   
+}
+
+
+.advantages {
+    width: 1200px;
+    background-color: #FFFFFF;
     background-image: url("/img/index-background.jpg");
     background-size: 1200px 485px;
     background-repeat: no-repeat;
+    margin-top: -70px;
 }
 
-.welcome-block {
+.advantages-block {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
-    /* margin-left: auto; не выравнивается по центру почему-то
-    margin-right: auto; */
 }
 
-.welcome-block-image {
-    margin-top: 30px;
+.advantages-block-image:last-child {
+    margin-top: 50px;
+    margin-bottom: 82px;
+}
+
+.about-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 63px 240px 147px 240px;
+    padding: 0 40px 0 40px;
+
 }
 
 /*
 .page {
-}
-.page-header {
 }
 .navigation {
 }
@@ -53,31 +169,19 @@ body {
 }
 .logo-link-image {
 }
-.site-menu-list {
-}
 .site-menu-item {
 }
 .site-menu-item-active {
 }
-.site-menu-link {
-}
-.nav-list {
-}
-.nav-user {
-}
 .nav-item {
 }
 .nav-link {
-}
-.visually-hidden {
 }
 .nav-counter-button {
 }
 .nav-button {
 }
 .main-index {
-}
-.advantages {
 }
 .about-title {
 }
