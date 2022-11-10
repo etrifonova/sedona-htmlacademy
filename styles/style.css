@@ -155,10 +155,60 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #000000;
-    margin: 63px 240px 147px 240px;
+    margin: 63px 240px 31px 240px;
     padding: 0 40px 0 40px;
+}
+
+.about-text {
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    margin: 31px 220px 80px 220px;
+    padding: 0 40px 0 40px;
+}
+
+.advantages-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "advantage-1 advantage-1 advantage-1"
+                        "advantage-1 advantage-1 advantage-1"
+                        "advantage-2-image advantage-2-image advantage-2"
+                        "advantage-3 advantage-4 advantage-5"
+}
+
+.advantages-item:first-child {
+    grid-area: advantage-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "advantages-title-and-text advantage-1-image advantage-1-image"
+                        "advantages-subitem-1 advantages-subitem-2 advantages-subitem-3"
 
 }
+
+.advantages-title-and-text {
+    grid-area: advantages-title-and-text;
+}
+
+.advantages-image {
+    grid-area: advantage-1-image;
+}
+
+.advantages-subitem:first-child {
+    grid-area: advantages-subitem-1;
+}
+
+.advantages-subitem:nth-child(2) {
+    grid-area: advantages-subitem-2;
+}
+
+.advantages-subitem:last-child {
+    grid-area: advantages-subitem-3;
+}
+
+/* .advantages-subitem:first-child {
+    grid-area: accommodation;
+} */
+
 
 /*
 .page {
