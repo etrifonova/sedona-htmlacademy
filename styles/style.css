@@ -272,6 +272,43 @@ body {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
+.hotel-search {
+    width: 1200px;
+    height: 417px;
+    background-color: #FFFFFF;
+    margin-top: -22px;
+    text-align: center;
+}
+
+.hotel-search-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 91px 240px 29px 240px;
+
+}
+
+.hotel-search-text {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 29px 240px 56px 240px;
+}
+
+.hotel-search-button {
+    margin: 56px 312px 105px 312px;
+    font-family: inherit;
+    color: #FFFFFF;
+    background-color: #756257;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
 /* "advantage-3 advantage-4 advantage-5" */
 
 
@@ -318,8 +355,6 @@ body {
 .advantages-subitem {
 }
 .advantages-item-black {
-}
-.hotel-search {
 }
 .hotel-search-title {
 }
