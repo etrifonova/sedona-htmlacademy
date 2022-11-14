@@ -16,6 +16,9 @@
 }
 
 body {
+    height: 3315px;
+    width: 1280px;
+    margin: 0;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -23,9 +26,6 @@ body {
     line-height: 21px;
     color: #333333;
     background-color: #E5E5E5;
-    height: 3315px;
-    width: 1280px;
-    margin: 0;
 }
 
 
