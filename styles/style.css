@@ -25,12 +25,10 @@ body {
     background-color: #E5E5E5;
     height: 3315px;
     width: 1280px;
+    margin: 0;
 }
 
 
-.visually-hidden {
-    visibility: hidden;
-}
 
 .page-header {
     color: #000000;
@@ -284,7 +282,6 @@ body {
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
-    letter-spacing: 0em;
     text-align: center;
     margin: 91px 240px 29px 240px;
 
@@ -309,9 +306,97 @@ body {
 
 }
 
-/* "advantage-3 advantage-4 advantage-5" */
+.newsletter-with-background {
+    width: 1200px;
+    height: 411px;
+    background-image: url("/img/newsletter-background.jpg");
+    background-size: 1200px 411px;
+    margin-top: -110px;
+    text-align: center;
+}
+
+.newsletter-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 94px 240px 29px 240px;
+
+}
+
+.newsletter-text {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+
+    padding: 0 320px 46px 320px;
+}
+
+.newsletter-form {
+    display: grid;
+    vertical-align: bottom;
+    width: 800px;
+    height: 60px;
+    grid-template-columns: 3fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+.newsletter-email {
+    background: #F2F2F2;
+    height: inherit;
+}
+
+.newsletter-button {
+    background-color: #83B3D3;
+    height: inherit;
+
+}
+/* Поле ввода и кнопка находятся не на одной линии */
+
+.page-footer {
+    width: 1200px;
+    height: 120px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-link {
+    text-decoration: none;
+    
+}
+
+.social-link .visually-hidden {
+    visibility: hidden;
+}
+
+.footer-phone {
+    font-family: inherit;
+    color: #000000;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer-logo-link {
+    margin-right: 72px;
+
+}
 
 /*
 .page {
@@ -382,8 +467,6 @@ body {
 }
 .page-footer {
 }
-.social-list {
-}
 .social-item {
 }
 .social-link {
@@ -399,8 +482,3 @@ body {
 */
 
 /* КАТАЛОГ */
-.filter {
-    background-image: url("/img/catalog-background\ 1.jpg");
-    background-size: 1200px 408px;
-    background-repeat: no-repeat;
-}
