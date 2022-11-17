@@ -398,87 +398,74 @@ body {
 
 }
 
-/*
-.page {
-}
-.navigation {
-}
-.logo-link {
-}
-.logo-link-image {
-}
-.site-menu-item {
-}
-.site-menu-item-active {
-}
-.nav-item {
-}
-.nav-link {
-}
-.nav-counter-button {
-}
-.nav-button {
-}
-.main-index {
-}
-.about-title {
-}
-.about-text {
-}
-.advantages-list {
-}
-.advantages-item {
-}
-.advantages-title {
-}
-.advantages-text {
-}
-.advantages-image {
-}
-.advantages-sublist {
-}
-.advantages-subitem {
-}
-.advantages-item-black {
-}
-.hotel-search-title {
-}
-.hotel-search-text {
-}
-.hotel-search-button {
-}
-.button {
-}
-.newsletter {
-}
-.with-background {
-}
-.newsletter-title {
-}
-.newsletter-text {
-}
-.newsletter-form {
-}
-.newsletter-email {
-}
-.newsletter-email-label {
-}
-.newsletter-button {
-}
-.page-footer {
-}
-.social-item {
-}
-.social-link {
-}
-.footer-phone {
-}
-.footer-logo-link {
-}
-.footer-logo-image {
+/* КАТАЛОГ */
+
+.main-inner {
+    background-image: url("/img/catalog-background-1.jpg");
+    background-size: 1200px 408px;
+    background-repeat: no-repeat;
+    margin-top: -35px;
 }
 
+.inner-background, .filter, .breadcrumbs-link {
+    color: #FFFFFF;
+}
 
-*/
+.filter-title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: left;
+    margin-left: 71px;
+    margin-top: 35px;
+    padding-top: 40px;
+
+}
+
+.breadcrumbs-list {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin-left: 0;
+    margin-top: -30px;
+}
+
+.breadcrumbs-link {
+    color: inherit;
+    margin-left: 40px;
+}
+
+.catalog-filter {
+    margin-left: 55px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 150px 287px 287px 1fr;
+    gap: 50px;
+}
+
+.catalog-filter-list {
+    list-style: none;
+    margin-left: -40px;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+fieldset {
+    border: none;
+}
+
+.catalog-filter-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.catalog-filter-item {
+    padding-bottom: 13px;
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
 
 /* КАТАЛОГ */
