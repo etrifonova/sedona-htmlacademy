@@ -468,4 +468,11 @@ fieldset {
     visibility: hidden;
 }
 
+.control-input {
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+
 /* КАТАЛОГ */
